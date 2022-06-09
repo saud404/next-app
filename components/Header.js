@@ -7,16 +7,16 @@ export default function Header() {
 
   return (
     <div>
-      <header className="fixed top-0 z-50 w-full clearNav">
-        <div className="flex flex-col flex-wrap max-w-5xl p-5 mx-auto md:flex-row">
-          <div className="flex flex-row items-center justify-between p-3 md:flex-row md:p-1">
+      <header class="fixed top-0 z-50 w-full clearNav">
+        <div class="flex flex-col flex-wrap max-w-5xl p-5 mx-auto md:flex-row">
+          <div class="flex flex-row items-center justify-between p-3 md:flex-row md:p-1">
             <Link href="/">
-              <a className="flex mb-4 text-3xl font-medium text-white md:mb-0"
+              <a class="flex mb-4 text-3xl font-medium text-white md:mb-0"
               > <img src="../images/M-open-73-right nav bar image.png" alt="alternatetext" className="h-20 w-75" />
               </a>
             </Link>
             <button
-              className="content-end px-3 py-1 pb-4 ml-auto leading-none text-white outline-none cursor-pointer md:hidden focus:outline-none"
+              class="content-end px-3 py-1 pb-4 ml-auto leading-none text-white outline-none cursor-pointer md:hidden focus:outline-none"
               type="button"
               aria-label="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
@@ -31,7 +31,7 @@ export default function Header() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-menu"
+                class="feather feather-menu"
               >
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -40,26 +40,26 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={
+            class={
               "md:flex flex-grow items-center" +
               (navbarOpen ? " flex" : " hidden")
             }
           >
-            <div className="flex flex-wrap items-center pt-1 pl-1 md:ml-auto md:mr-auto font-4 md:pl-14 md:text-base text-1xl md:justify-center justify-items-start">
+            <div class="flex flex-wrap items-center pt-1 pl-1 md:ml-auto md:mr-auto font-4 md:pl-14 md:text-base text-1xl md:justify-center justify-items-start">
               <Link href="/about">
                 <a class="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
                   About
                 </a>
               </Link>
-              <div className="relative">
+              <div class="relative">
                 <button
                   type="button"
-                  className="inline-flex items-center text-base font-medium text-gray-300 rounded-md group focus:outline-none'"
+                  class="inline-flex items-center text-base font-medium text-gray-300 rounded-md group focus:outline-none'"
                   onMouseEnter={() => (setFlyer(!flyer), setFlyerTwo(false))}
                 >
-                  <span className="tr04">Services</span>
+                  <span class="tr04">Services</span>
                   <svg
-                    className={
+                    class={
                       flyer === true
                         ? "transform rotate-180 ml-3 h-5 w-5 transition ease-out duration-200"
                         : "ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
@@ -78,23 +78,23 @@ export default function Header() {
                 </button>
                 <div
                   onMouseLeave={() => setFlyer(false)}
-                  className={
+                  class={
                     flyer
                       ? "opacity-100 translate-y-0 transition ease-out duration-200 absolute z-10 -ml-4 mt-3 g327 border transform px-2 w-screen max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
                       : "hidden opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
                   }
                 >
-                  <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div className="relative grid gap-6 px-2 py-6 bg-black sm:gap-8 ">
+                  <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div class="relative grid gap-6 px-2 py-6 bg-black sm:gap-8 ">
                       <Link href="/services/business/">
-                        <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-800 tr04"
+                        <a class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-800 tr04"
                         >
 
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-white">
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-white">
                               Business
                             </p>
-                            <p className="mt-1 text-sm text-gray-500">
+                            <p class="mt-1 text-sm text-gray-500">
                               Services
                             </p>
                           </div>
@@ -102,26 +102,26 @@ export default function Header() {
                       </Link>
                       <Link href="/services/itservices/">
                         <a
-                          className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-800 tr04"
+                          class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-800 tr04"
                         >
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-white">
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-white">
                               Technology
                             </p>
-                            <p className="mt-1 text-sm text-gray-500">
+                            <p class="mt-1 text-sm text-gray-500">
                               Services
                             </p>
                           </div>
                         </a>
                       </Link>
                       <Link href="/services/legal">
-                        <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-800 tr04"
+                        <a class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-800 tr04"
                         >
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-white">
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-white">
                               Legal
                             </p>
-                            <p className="mt-1 text-sm text-gray-500">
+                            <p class="mt-1 text-sm text-gray-500">
                               Services
                             </p>
                           </div>
@@ -147,7 +147,7 @@ export default function Header() {
 
                 rel="noopener noreferrer"
                 target="_blank"
-                className="invisible md:visible"
+                class="invisible md:visible"
               >
                 <svg
                   title="Twitter"
@@ -170,7 +170,7 @@ export default function Header() {
                 data-v-54e46119=""
                 rel="noopener noreferrer"
                 target="_blank"
-                className="invisible pl-7 md:visible"
+                class="invisible pl-7 md:visible"
               >
                 <svg
                   data-v-54e46119=""
@@ -180,7 +180,7 @@ export default function Header() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   title="LinkedIn logo"
-                  className="linkedin-link--logo"
+                  class="linkedin-link--logo"
                 >
                   <path
                     data-v-54e46119=""

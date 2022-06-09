@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
-    <div className="text-black bg-black">
+    <div class="text-black bg-black">
       <NextSeo
         title="M-Open73 | What We DO"
         description="Welcome to M-Open73 What We DO."

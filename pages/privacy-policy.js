@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
-    <div className="text-black bg-black">
+    <div class="text-black bg-black">
       <NextSeo
         title="Privacy-Policy: M-Open73 | Privacy Policy"
         description="Welcome to Privacy Policy page."
